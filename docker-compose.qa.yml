@@ -1,0 +1,6 @@
+services:
+  frontend:
+    build:
+      args:
+        NODE_ENV: QA
+        BUILD_PATH: /app/dist/qa/calendarios

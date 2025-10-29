@@ -1,0 +1,22 @@
+services:
+  frontend:
+    build: ../Calendarios-F
+    container_name: calendario_front
+    ports:
+      - "8085:8085"
+    depends_on:
+      - backend
+    networks:
+      - calendario_network
+
+  backend:
+    build: .
+    container_name: calendario_back
+    ports:
+      - "8086:8086"
+    networks:
+      - calendario_network
+
+networks:
+  calendario_network:
+    driver: bridge

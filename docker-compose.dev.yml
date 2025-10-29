@@ -1,0 +1,7 @@
+version: '3.8'
+services:
+  frontend:
+    build:
+      args:
+        NODE_ENV: DEV
+        BUILD_PATH: /app/dist/development/calendarios
