@@ -19,5 +19,5 @@ docker compose -f docker-compose.yml -f docker-compose.qa.yml up --build -d
 ## DEPLEGAR LOS CONTENEDORES EN EL AMBIENTE DE PRODUCCION
 
 ```bash
-DO SOMETHING
+docker compose up -d
 ```
